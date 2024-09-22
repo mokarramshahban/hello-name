@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    position: relative;
+    background-color: #a9b9c9;
+}
+
+.container{
+    margin-top: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+span{
+    color: red;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d75550;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #1f60b5;
+}
+
+/* Media Queries */
+
+/* For tablets (width less than 768px) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-color: #a9b9c9; /* Example of background color change for tablets */
+    }
+
+    .container {
+        width: 80%; /* Reduce container width for better fit on smaller screens */
+        margin-top: 30vh;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile phones (width less than 480px) */
+@media (max-width: 500px) {
+    body {
+        background-color: #a9b9c9; /* Change background for mobile */
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 50vh;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+    }
+}
